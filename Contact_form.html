@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>George & Mary | Contact Form</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <!-- Footer Link -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=61349f5f66bc96001282e054&product=sticky-share-buttons"
+        async="async"></script>
+</head>
+
+<body>
+    <!-- Navigator Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                George and Mary
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="theme.html">Theme</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+                <li><a href="Contact_form.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sharethis-sticky-share-buttons"></div>
+
+    <!-- Top Image & Texts-->
+    <img src="images/wedding.jpeg" style="position: relative; width: 100%; height: 100vh;">
+
+    <div class="container mt-5" id="div1">
+
+        <!-- Navigator to change form -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="Contact_form.html">Contact Form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Registration_form.html">Registration Form</a>
+            </li>
+        </ul>
+        <br>
+        <h1>Contact us</h1>
+        <hr>
+
+        <form class="form-row">
+
+            <!-- Name -->
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name</style></label>
+                <input type="text" class="form-control" id="firstname" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" required> <br>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-md-4">
+                <label for="phonenumber" class="form-label">Phone number</label>
+                <input type="text" class="form-control" id="phonenumber" placeholder="Enter your phone number"
+                    data-toggle="popover" data-content="Country Code is required">
+            </div>
+            <div class="col-md-8">
+                <label for="e-mail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required> <br>
+            </div>
+
+            <!-- Ways to know our website -->
+            <div class="col-md-8">
+                <label for="Find_us" class="form-label">How did you find us?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="facebook" value="Facebook"
+                        checked>
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="youtube" value="Youtube">
+                    <label class="form-check-label" for="youtube">YouTube</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="advertisement"
+                        value="Advertisement">
+                    <label class="form-check-label" for="advertisement">Advertisement</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="tvshow" value="TV Shows">
+                    <label class="form-check-label" for="tvshow">TV Shows</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="family" value="Family">
+                    <label class="form-check-label" for="family">Family</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="friends" value="Friends">
+                    <label class="form-check-label" for="friends">Friends</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howtoknowus" id="other" value="Others">
+                    <label class="form-check-label" for="other">Others</label>
+                </div> <br>
+            </div>
+
+            <!-- Comment -->
+            <div class="col-md-12">
+                <label for="comment" class="form-label">Anything want to tell us?</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="Write here..."></textarea> <br>
+            </div>
+
+            <!-- Buttons -->
+            <div class="col-md-1">
+                <input type="submit" class="btn btn-primary" value="Submit" data-toggle="modal"
+                    data-target="#displaydone">
+            </div>
+            <div class="col-md-11">
+                <input type="reset" class="btn btn-primary" value="Clear">
+                <br>
+            </div>
+        </form>
+        <hr>
+
+        <!-- Change to Registration form -->
+        <div class="float-right">
+            <a href="Registration_form.html" id="switch">switch to registration form
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                </svg>
+            </a>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="index.html#title2">about us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:yukang0228@1utar.my">yukang0228@1utar.my</a></li>
+                        <li><a href="mailto:wainieooi@1utar.my">wainieooi@1utar.my</a></li>
+                        <li><a href="mailto:yuentat@1utar.my">yuentat@1utar.my</a></li>
+                        <li><a href="mailto:waihong@1utar.my">waihong6001@1utar.my</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/George-and-Mary-105013465258089/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/georgeandmary13"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/george.mary1/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //Popover Message
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top',
+                trigger: 'hover'
+            });
+        });
+
+        $(function () {
+            $("form").submit(function (event) {
+                event.preventDefault();
+
+                window.alert("Completed:\nThank you for the submission.\nWe'll direct you to the main page.");
+                window.location.href = "index.html";
+            });
+
+            //Store data to sessionstorage for registration purpose
+            $("#switch").click(function (event) {
+                var user = [];
+
+                user[0] = $("#firstname").val();
+                user[1] = $("#lastname").val();
+
+                if ($("#phonenumber").val() != "")
+                    user[2] = $("#phonenumber").val();
+                else
+                    user[2] = "";
+
+                user[3] = $("#email").val();
+
+                sessionStorage.setItem("User", JSON.stringify(user));
+            });
+        });
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/613356be649e0a0a5cd494dd/1feo8lmr8';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

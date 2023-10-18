@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(255, 251, 255);
+}
+#div1 {
+    background-color: white;
+} 
+.hidden {
+    display: none;
+}

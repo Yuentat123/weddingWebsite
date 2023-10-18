@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>George & Mary | Registration Form</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/form.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <!-- Footer Link -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=61349f5f66bc96001282e054&product=sticky-share-buttons"
+        async="async"></script>
+</head>
+
+<body>
+    <!-- Navigator Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                George and Mary
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="theme.html">Theme</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="vendor.html">Vendor</a></li>
+                <li><a href="Contact_form.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sharethis-sticky-share-buttons"></div>
+
+    <!-- Top Image & Texts -->
+    <img src="images/wedding.jpeg" style="position: relative; width: 100%; height: 100vh;">
+
+    <div class="container mt-5" id="div1">
+
+        <!-- Navigator to change form -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="Contact_form.html">Contact Form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="Registration_form.html">Registration Form</a>
+            </li>
+        </ul>
+        <br>
+        <h1>Registration Form</h1>
+        <hr>
+
+        <form class="form-row">
+
+            <!-- Part A -->
+            <div class="col-md-12">
+                <p>
+                <h2><u>Part A</u></h2>
+                </p>
+            </div>
+            <!-- Name -->
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name</style></label>
+                <input type="text" class="form-control" id="firstname" value="" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname" value="" required> <br>
+            </div>
+            <!-- Contact Details -->
+            <div class="col-md-4">
+                <label for="phonenumber" class="form-label">Phone number</label>
+                <input type="text" class="form-control" id="phonenumber" value="" placeholder="Enter your phone number"
+                    data-toggle="popover" data-content="Country Code is required">
+            </div>
+            <div class="col-md-8">
+                <label for="e-mail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="e-mail" value="" placeholder="Enter your email" required>
+                <br>
+            </div>
+
+            <!-- Part B -->
+            <div class="col-md-12">
+                <hr>
+                <h2><u>Part B</u></h2>
+            </div>
+            <!-- Registration detials -->
+
+            <!-- Theme -->
+            <div class="col-md-6">
+                <label for="theme" class="form-label">
+                    <h4>Theme <a href="theme.html"><button type="button" class="btn btn-secondary" data-toggle="popover"
+                                data-content="This will link you to Theme page">Choose</button></a></h4>
+                </label>
+                <input type="text" class="form-control" id="theme" value="" required disabled> <br>
+            </div>
+            <div class="col-md-6"></div>
+
+            <!-- Venue -->
+            <div class="col-md-6">
+                <label for="venue" class="form-label">
+                    <h4>Venue <a href="venue.html"><button type="button" class="btn btn-secondary" data-toggle="popover"
+                                data-content="This will link you to Venue page">Choose</button></a></h4>
+                </label>
+                <input type="text" class="form-control" id="venue" value="" required disabled> <br>
+            </div>
+            <div class="col-md-6"></div>
+
+            <!-- Vendor -->
+            <div class="col-md-12">
+                <h4>Vendor <a href="vendor.html"><button type="button" class="btn btn-secondary" data-toggle="popover"
+                            data-content="This will link you to Vendor page">Choose</button></a></h4>
+            </div>
+            <div class="col-md-4">
+                <!-- Photographer -->
+                <label for="photographer" class="form-label">Photographer:</label>
+                <input type="text" class="form-control" id="photographer" value="" required disabled>
+            </div>
+            <div class="col-md-4">
+                <!-- Caterer -->
+                <label for="caterer" class="form-label">Caterer:</label>
+                <input type="text" class="form-control" id="caterer" value="" required disabled>
+            </div>
+            <div class="col-md-4">
+                <!-- Florist -->
+                <label for="florist" class="form-label">Florist:</label>
+                <input type="text" class="form-control" id="florist" value="" required disabled>
+            </div>
+            <div class="col-md-4">
+                <!-- Officiant -->
+                <label for="officiant" class="form-label">Officiant:</label>
+                <input type="text" class="form-control" id="officiant" value="" required disabled>
+            </div>
+            <div class="col-md-4">
+                <!-- Hair & MakeUp -->
+                <label for="hair-makeup" class="form-label">Hair & MakeUp:</label>
+                <input type="text" class="form-control" id="hair-makeup" value="" required disabled>
+            </div>
+            <div class="col-md-4">
+                <!-- Dj -->
+                <label for="dj" class="form-label">Dj:</label>
+                <input type="text" class="form-control" id="dj" value="" required disabled> <br>
+            </div>
+
+            <div class="col-md-2">
+                <!-- No. of Guests -->
+                <label for="guest" class="form-label">No. of Guest</label>
+                <input type="text" class="form-control" id="guest" required>
+            </div>
+            <div class="col-md-2">
+                <!-- Date -->
+                <label for="eventdate" class="form-label">Event Date</label>
+                <input type="date" class="form-control" id="eventdate" required>
+            </div>
+            <div class="col-md-8"></div>
+
+            <!-- Button to print the input details -->
+            <div class="col-md-12">
+                <br>
+                <input type="button" class="btn btn-primary" id="enter" value="Enter">
+                <hr>
+            </div>
+
+            <!-- Part C invisible before the above enter button is clicked-->
+            <div class="col-md-12 hidden" id="div2">
+                <h2>Part C</h2>
+                <h3><u>Confirmation</u></h3>
+            </div>
+            <!-- Print final confirm details -->
+            <div class="col-md-12">
+                <table>
+                    <tbody></tbody>
+                </table>
+                <br>
+            </div>
+
+            <!-- Buttons -->
+            <div class="col-md-2">
+                <input type="submit" class="btn btn-primary hidden" id="send" value="Submit" data-toggle="modal"
+                    data-target="#displaydone">
+            </div>
+            <div class="col-md-10">
+                <input type="reset" class="btn btn-primary hidden" id="clear" value="Clear">
+                <br>
+            </div>
+            <div class="col-md-12" id="test">
+
+            </div>
+        </form>
+        <hr>
+
+        <!-- Change to Contact form -->
+        <div class="float-start">
+            <a href="Contact_form.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg>
+                switch to contact form
+            </a>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="index.html#title2">about us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:yukang0228@1utar.my">yukang0228@1utar.my</a></li>
+                        <li><a href="mailto:wainieooi@1utar.my">wainieooi@1utar.my</a></li>
+                        <li><a href="mailto:yuentat@1utar.my">yuentat@1utar.my</a></li>
+                        <li><a href="mailto:waihong@1utar.my">waihong6001@1utar.my</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/George-and-Mary-105013465258089/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/georgeandmary13"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/george.mary1/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        //Popover Message
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top',
+                trigger: 'hover'
+            });
+        });
+
+        //Initialize the variable
+        var theme = "";
+        var venue = "";
+        var photographer = "";
+        var caterer = "";
+        var florist = "";
+        var officiant = "";
+        var hairmakeup = "";
+        var dj = "";
+
+        if (typeof (Storage) !== "undefined") {
+            //Get the data for part A
+            var details_A = JSON.parse(sessionStorage.getItem("User"));
+            if (details_A != null) {
+                //Assign the data
+                $("#firstname").val(details_A[0]);
+                $("#lastname").val(details_A[1]);
+                $("#phonenumber").val(details_A[2]);
+                $("#e-mail").val(details_A[3]);
+            }
+
+            //Get the data for part B
+            var details_theme = JSON.parse(sessionStorage.getItem("Theme"));
+            if (details_theme != null) {
+                //Assign the data
+                $("#theme").val(details_theme);
+            }
+            var details_venue = JSON.parse(sessionStorage.getItem("Venue"));
+            if (details_venue != null) {
+                //Assign the data
+                $("#venue").val(details_venue);
+            }
+            var details_vendor = JSON.parse(sessionStorage.getItem("Vendor"));
+            if (details_vendor != null) {
+                //Assign the data
+                $("#photographer").val(details_vendor[0]);
+                $("#caterer").val(details_vendor[1]);
+                $("#florist").val(details_vendor[2]);
+                $("#officiant").val(details_vendor[3]);
+                $("#hair-makeup").val(details_vendor[4]);
+                $("#dj").val(details_vendor[5]);
+            }
+        }
+
+        $(function () {
+            $("#enter").click(function (event) {
+                event.preventDefault();
+
+                var fname = $("#firstname").val();
+                var lname = $("#lastname").val();
+                var phonenumber = $("#phonenumber").val();
+                var email = $("#e-mail").val();
+                var theme = $("#theme").val();
+                var venue = $("#venue").val();
+                var photographer = $("#photographer").val();
+                var caterer = $("#caterer").val();
+                var florist = $("#florist").val();
+                var officiant = $("#officiant").val();
+                var hairmakeup = $("#hair-makeup").val();
+                var dj = $("#dj").val();
+                var guest = $("#guest").val();
+                var date = $("#eventdate").val();
+
+                //Print out the details
+                $("tbody").html("<tr><td>First Name</td><td> : </td><td>" + fname + "</td></tr>" +
+                    "<tr><td>Last Name</td><td> : </td><td>" + lname + "</td></tr>" +
+                    "<tr><td>Phone Number</td><td> : </td><td>" + phonenumber + "</td></tr>" +
+                    "<tr><td>E-mail</td><td> : </td><td>" + email + "</td></tr>" +
+                    "<tr><td>Theme</td><td> : </td><td>" + theme + "</td></tr>" +
+                    "<tr><td>Venue</td><td> : </td><td>" + venue + "</td></tr>" +
+                    "<tr><td>Photographer</td><td> : </td><td>" + photographer + "</td></tr>" +
+                    "<tr><td>Caterer</td><td> : </td><td>" + caterer + "</td></tr>" +
+                    "<tr><td>Florist</td><td> : </td><td>" + florist + "</td></tr>" +
+                    "<tr><td>Officiant</td><td> : </td><td>" + officiant + "</td></tr>" +
+                    "<tr><td>Hair & MakeUp</td><td> : </td><td>" + hairmakeup + "</td></tr>" +
+                    "<tr><td>Dj</td><td> : </td><td>" + dj + "</td></tr>" +
+                    "<tr><td>No. of Guest</td><td> : </td><td>" + guest + "</td></tr>" +
+                    "<tr><td>Event Date</td><td> : </td><td>" + date + "</td></tr>"
+                );
+
+                //make the Part C to be visible
+                $("#div2").attr("class", "col-md-12");
+                $("#send").attr("class", "btn btn-primary")
+                $("#clear").attr("class", "btn btn-primary")
+            });
+
+            //clear all the inputed details and hide the Part C
+            $("#clear").click(function (event) {
+                $("tbody").html("");
+                $("#div2").attr("class", "col-md-12 hidden");
+                $("#send").attr("class", "btn btn-primary hidden")
+                $("#clear").attr("class", "btn btn-primary hidden")
+            });
+
+            //notify when the submission is done
+            $("form").submit(function (event) {
+                //clear the data
+                sessionStorage.clear();
+
+                window.alert("Completed:\nThank you for the registration.\nWe'll approach to you as soon as possible.");
+            });
+        });
+
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/613356be649e0a0a5cd494dd/1feo8lmr8';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
